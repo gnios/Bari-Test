@@ -8,13 +8,13 @@ namespace Bari.Api.Messages
 {
     public class HelloWorldMessageInput
     {
-        public HelloWorldMessageInput(string text, string exchangeNama, string queueName)
+        public HelloWorldMessageInput(string text, string exchangeName, string queueName)
         {
             this.id = Guid.NewGuid();
             TimeStamp = DateTime.Now;
             Origin = "hello-world-service";
             Text = text;
-            ExchangeNama = exchangeNama;
+            ExchangeName = exchangeName;
             QueueName = queueName;
         }
 
@@ -22,7 +22,7 @@ namespace Bari.Api.Messages
         public DateTime TimeStamp { get; }
         public string Origin{ get; }
         public string Text { get; }
-        public string ExchangeNama{ get; }
+        public string ExchangeName{ get; }
         public string QueueName { get; }
     }
 }
