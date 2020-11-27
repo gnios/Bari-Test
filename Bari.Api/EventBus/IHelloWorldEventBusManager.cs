@@ -7,6 +7,6 @@ namespace Bari.Api.EventBus
 
         void Subscribe();
 
-        void PublishEvery(string message, int milliseconds);
+        void PublishMessageEvery(string message, int milliseconds);
     }
 }

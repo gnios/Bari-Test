@@ -79,7 +79,7 @@ namespace Bari.Api
 
 
             eventBusManager.Subscribe();
-            eventBusManager.PublishEvery("Hello World", 5000);
+            eventBusManager.PublishMessageEvery("Hello World", 5000);
 
             app.UseSwaggerUI(c =>
             {

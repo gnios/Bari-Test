@@ -48,7 +48,7 @@ namespace Bari.Api.EventBus
             _rabbitMQManager.Subscribe<IHellorWorldConsumer>(subArg);
         }
 
-        public void PublishEvery(string message, int milliseconds)
+        public void PublishMessageEvery(string message, int milliseconds)
         {
             SetInterval(() => this.Publish(message), milliseconds);
         }
